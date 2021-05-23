@@ -1,0 +1,272 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{resume}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{Tushar Sadhwani}{ \urlstyle{same}\href{https://tusharsadhwani.dev}{tusharsadhwani.dev} | \href{https://github.com/tusharsadhwani}{github.com/tusharsadhwani}\\
+\href{mailto:tushar.sadhwani000@gmail.com}{tushar.sadhwani000@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.35\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Institute of Engineering and Technology, DAVV}
+\descript{BE in Information Technology}
+\location{2018 - 2022 | Indore, India}
+\sectionsep
+
+\subsection{New Digamber Public School}
+\location{Grad. April 2018| Indore, India}
+\sectionsep
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+\begin{tabular}{ll}
+Github: & \href{https://github.com/tusharsadhwani}{\bf tusharsadhwani} \\
+LinkedIn: & \href{https://www.linkedin.com/in/tusharsadhwani}{\bf tusharsadhwani} \\
+Twitter: & \href{https://twitter.com/sadhlife}{\bf @sadhlife} \\
+Instagram: & \href{https://instagram.com/sadhlife}{\bf @sadhlife} \\
+Telegram: & \href{https://t.me/sadhlife}{\bf @sadhlife}
+\end{tabular}
+\sectionsep
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Achievements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements}
+\vspace{4pt}
+
+\href{https://leetcode.com/tusharsadhwani/}{\textbf{LeetCode solved}: 120+} \\
+\href{https://github.com/tusharsadhwani}{\textbf{GitHub Stars}: 400+} \\
+\href{https://dev.to/tusharsadhwani}{\textbf{Blog followers}: 110+} \\
+\vspace{8pt}
+
+\subsection{Twitch Affiliation}
+\vspace{4pt}
+\textbullet{} Coding livestreams \\
+\textbullet{} Covers programming topics, with interactive development and learning \\
+\vspace{8pt}
+
+\subsection{Talks Given}
+\vspace{4pt}
+\textbullet{} \href{https://www.2020twenty.net/indore/}{Intro to Golang (2020)} \href{https://bit.ly/intro-to-golang}{\textbf{(Slides)}} \\
+\textbullet{} Basics of Python (2020) \href{https://github.com/tusharsadhwani/intro-to-python}{\textbf{(Source)}}
+\sectionsep
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Proficient Languages:}
+Python \textbullet{} JavaScript \textbullet{} TypeScript \textbullet{} Dart \textbullet{} Golang \textbullet{} CSS \\
+\vspace{8pt}
+\location{Frameworks:}
+Flutter \textbullet{} React \textbullet{} NextJS \textbullet{} Gatsby \textbullet{} VueJS \\
+\vspace{8pt}
+\location{Platforms and Tools:}
+Git \textbullet{} Docker \textbullet{} AWS \textbullet{} Firebase \\
+\vspace{8pt}
+\location{Familiar:}
+Django \textbullet{} SQL  \textbullet{} Bash  \textbullet{} \LaTeX \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.62\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{\href{https://deepsource.io}{DeepSource}}\emph{(upcoming)}
+\descript{| Language Engineer Intern}
+\location{July 2021 - Present | San Francisco, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Static analyzer stuff, probably
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://jupiter.money}{Jupiter}}
+\descript{| Software Engineer Intern }
+\location{June 2020 – Oct 2020 | Jan 2021 – Apr 2021 | Bangalore, India}
+\begin{tightemize}
+\item Built a webapp that brought \textbf{3000 new people} to the platform in 3 weeks.
+\item Created the frontend of their  \href{https://jupiter.money/portfolio-analyser}{\textbf{Portfolio Analyser}} - with responsive design, and native animations.
+\item Made their \href{https://jupiter.money/quiz}{\textbf{Financial Personality Quiz}}, with device-specific integrations and a beautiful design.
+\item Created several internal tools, and helped with the tech stack of their mobile app.
+\item Worked mainly with TypeScript, React, and Node.js
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://cofiato.com}{Cofiato}}
+\descript{| Front-end Intern }
+\location{Apr 2020 – June 2020 | Indore, India}
+\begin{tightemize}
+\item Worked mainly with \textbf{Firebase} and \textbf{React Native} to create cross platform mobile apps.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{\href{https://codenscious.com}{Codenscious Technologies}}
+\descript{| Front-end Intern }
+\location{Apr 2020 – June 2020 | Indore, India}
+\begin{tightemize}
+\item Created an automated software using \textbf{Google Sheets API} to manage all employees’ attendance and worksheets, \textbf{saving 2 hours everyday} of HR's work.
+\item Worked on various front-end web frameworks like \textbf{Vue.js}, and on AI-based projects like \href{https://meinstein.ai/}{mEinstein}, and various Python codebases.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{InstaChat}
+\descript{| \href{https://github.com/tusharsadhwani/instachat}{\textbf{Github}} | \href{https://instachat.live}{\textbf{Live Demo}}}
+Replica of Instagram's DMs and stories, written in \textbf{Flutter} and \textbf{Go}.\\
+Implements its own JWT-based \textbf{Auth}, and uses \textbf{Postgres}, and \textbf{Amazon S3} for text and media storage.
+\sectionsep
+
+\runsubsection{recv}
+\descript{| \href{https://github.com/tusharsadhwani/recv}{\textbf{Github}} | \href{https://recv.live}{\textbf{Live Demo}}}
+A super simple, super fast way to send text and URLs between devices.\\
+Can be used as a website, a cross-platform \textbf{PWA} with sharing capabilities, or as a \textbf{CLI} app. Written using \textbf{vanilla JS} and \textbf{Go}.
+\sectionsep
+
+\runsubsection{zxpy}
+\descript{| \href{https://github.com/tusharsadhwani/zxpy}{\textbf{Github}}}
+Supercharge your shell scripts by using Python, but with simple, intuitive integration of bash commands and pipes.
+\sectionsep
+
+\runsubsection{Sineline}
+\descript{| \href{https://github.com/tusharsadhwani/sineline}{\textbf{Github}} | \href{https://tusharsadhwani.dev/sineline}{\textbf{Live Demo}}}
+A lightweight remake of mobile game “Sine Line” from Third State Studio.\\
+Written from scratch in \textbf{p5.js}, an HTML5 canvas engine.
+\sectionsep
+
+\runsubsection{PySnippets}
+\descript{| \href{https://github.com/tusharsadhwani/python_snippets}{\textbf{Github}} | \href{https://pysnippets.xyz}{\textbf{Live Demo}}}
+A guide/playground website to learn Python interactively, via a collection of useful snippets.\\
+Made using \textbf{Flutter}, and \href{https://skulpt.org}{\textbf{Skulpt}} - a Python interpreter written in JS.
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
