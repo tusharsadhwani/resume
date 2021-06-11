@@ -4,6 +4,8 @@ A **one-page**, **two asymmetric column** resume template in **XeTeX** that cate
 
 Template taken directly from [Deedy's Resume](https://github.com/deedy/deedy-Resume)
 
+Rendered PDF of my resume viewable [here](https://tshr.me/cv)
+
 ## License
 
     Copyright 2014 Debarghya Das
